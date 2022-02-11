@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsPageComponent implements OnInit {
 
+  header = '';
+
   constructor() { }
 
   ngOnInit(): void {

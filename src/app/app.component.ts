@@ -10,7 +10,7 @@ export class AppComponent {
 
 
   sideBar() {
-    var sideContainer = document.querySelector('.navbar');
+    var sideContainer = document.querySelector('.navbar-header');
     var cartContainer = document.querySelector('.cart-items-container');
     var searchInput = document.querySelector('.search-form'); 
     sideContainer?.classList.toggle('active');
@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   cart(){
-    var sideContainer = document.querySelector('.navbar');
+    var sideContainer = document.querySelector('.navbar-header');
     var cartContainer = document.querySelector('.cart-items-container');
     var searchInput = document.querySelector('.search-form'); 
     sideContainer?.classList.remove('active');
@@ -28,7 +28,7 @@ export class AppComponent {
   }
 
   searchForm() {
-    var sideContainer = document.querySelector('.navbar');
+    var sideContainer = document.querySelector('.navbar-header');
     var cartContainer = document.querySelector('.cart-items-container');
     var searchInput = document.querySelector('.search-form'); 
     sideContainer?.classList.remove('active');

@@ -7,7 +7,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  //   text-transform: capitalize;
   transition: .2s linear;
 }
 
@@ -69,7 +69,7 @@
     }
   }
 
-  .navbar {
+  .navbar-header {
     a {
       margin: 0 1rem;
       font-size: 1.6rem;
@@ -80,6 +80,28 @@
       color: $mainColor;
       border-bottom: .1rem solid $mainColor;
       padding-bottom: 0.5rem;
+    }
+
+    .fa-user {
+      .w3-dropdown-content {
+        margin-top: 0.5rem;
+        background: $mainColor;
+        font-family: 'Roboto', sans-serif;
+
+        .w3-bar-item {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          height: 3rem;
+          text-align: start;
+          padding-left: 8px;
+          font-size: 1.5rem;
+
+          &:hover {
+            color: #010103;
+            border-bottom: 0.1rem solid #010103;
+          }
+        }
+      }
     }
   }
 
@@ -186,10 +208,14 @@
   .cart-items-container.active {
     right: 0;
   }
+
+  .checkout{
+      width: 92%;
+  }
 }
 
 .about {
-    padding:2rem 7%;
+  padding: 2rem 7%;
 
   .row {
     display: flex;
@@ -225,7 +251,7 @@
 }
 
 .contact {
-    padding:2rem 7%;
+  padding: 2rem 7%;
 
   .row {
     display: flex;
@@ -278,7 +304,7 @@
 }
 
 .blogs {
-    padding:2rem 7%;
+  padding: 2rem 7%;
 
   .box-container {
     display: grid;
@@ -308,88 +334,89 @@
         }
       }
 
-      .content{
-          padding: 2rem;
+      .content {
+        padding: 2rem;
 
-          .title{
-              font-size: 2.5rem;
-              line-height: 1.5;
-              color: #fff;
+        .title {
+          font-size: 2.5rem;
+          line-height: 1.5;
+          color: #fff;
 
-              &:hover{
-                  color: $mainColor;
-              }
+          &:hover {
+            color: $mainColor;
           }
+        }
 
-          span{
-              color: $mainColor;
-              display: block;
-              padding-top: 1rem;
-              font-size: 2rem;
-          }
-          p{
-              font-size: 1.6rem;
-              line-height: 1.8;
-              color: #ccc;
-              padding: 1rem 0;
-          }
+        span {
+          color: $mainColor;
+          display: block;
+          padding-top: 1rem;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 1.8;
+          color: #ccc;
+          padding: 1rem 0;
+        }
       }
     }
   }
 }
 
-.footer{
-    background: $black;
-    text-align: center;
+.footer {
+  background: $black;
+  text-align: center;
 
-    .share{
-        padding: 1rem 0;
+  .share {
+    padding: 1rem 0;
 
-        a{
-            height: 5rem;
-            width: 5rem;
-            line-height: 5rem;
-            font-size: 2rem;
-            color: #fff;
-            border: $border;
-            margin: 0.3rem;
-            border-radius: 50%;
+    a {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      color: #fff;
+      border: $border;
+      margin: 0.3rem;
+      border-radius: 50%;
 
-            &:hover{
-                background-color: $mainColor;
-            }
-        }
+      &:hover {
+        background-color: $mainColor;
+      }
     }
+  }
 
-    .links{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-        gap: 1rem;
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
 
-        a{
-            padding: 0.7rem 2rem;
-            color: #fff;
-            border: $border;
-            font-size: 1.6rem;
+    a {
+      padding: 0.7rem 2rem;
+      color: #fff;
+      border: $border;
+      font-size: 1.6rem;
 
-            &:hover{
-                background: $mainColor;
-            }
-        }
+      &:hover {
+        background: $mainColor;
+      }
     }
+  }
 
-    .credit{
-        font-size: 2rem;
-        color: #fff;
-        font-weight: lighter;
-        padding: 1.5rem;
+  .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
 
-        span{
-            color: $mainColor;
-        }
+    span {
+      color: $mainColor;
     }
+  }
 }
 
 
@@ -408,7 +435,7 @@
   }
 
   .header {
-    .navbar {
+    .navbar-header {
       position: absolute;
       top: 100%;
       right: -100%;
@@ -425,7 +452,7 @@
       }
     }
 
-    .navbar.active {
+    .navbar-header.active {
       right: 0;
     }
 
